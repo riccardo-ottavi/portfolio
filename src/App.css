@@ -5,11 +5,12 @@
 }
 
 body {
-  background-color: #84c2ff;
+  background-color: #F4EFE5;
+  color: #1A1A18;
 }
 
 .title{
-  background-color: #0A84FF;
+  background-color: #C9A65C;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -19,7 +20,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(54, 54, 54);
+  background-color: #1A1A18;
   color: white;
   width: 100%;
   display: flex;
@@ -38,7 +39,7 @@ body {
 }
 
 nav {
-  background-color: #0A84FF;
+  background-color: #C9A65C;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -51,4 +52,10 @@ a {
 ul {
   list-style: none;
   display: flex;
+}
+
+.section-box {
+  display: flex;
+  width: 70%;
+  justify-content: center;
 }

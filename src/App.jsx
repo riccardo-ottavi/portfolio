@@ -1,9 +1,17 @@
 import './App.css'
+import { Route, BrowserRouter, Routes } from 'react-router-dom'
+import DefaultLayout from './layouts/DefaultLayout'
+import HomePage from './pages/HomePage'
 
 function App() {
-
   return (
-    <h1>prova</h1>
+    <BrowserRouter>
+        <Routes>
+          <Route element={<DefaultLayout />}>
+            <Route path="/" element={<HomePage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
   )
 }
 

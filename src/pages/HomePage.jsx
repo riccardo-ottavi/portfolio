@@ -1,5 +1,5 @@
 export default function HomePage(){
     return(
-        <h1>Sono l'homepage</h1>
+        <h2>Sono l'homepage</h2>
     )
 }

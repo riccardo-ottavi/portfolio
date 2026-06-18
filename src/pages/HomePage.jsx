@@ -1,31 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { projects } from "../data/projectsInfos";
+import ProjectDetailsPage from "./ProjectDetailsPage";
+import Reveal from "../components/Reveal";
 
 export default function HomePage() {
 
-    function Reveal({ children, delay = 0 }) {
-        const ref = useRef(null);
-        const [visible, setVisible] = useState(false);
-        useEffect(() => {
-            const el = ref.current;
-            if (!el) return;
-            const io = new IntersectionObserver(
-                ([entry]) => entry.isIntersecting && setVisible(true),
-                { threshold: 0.15 }
-            );
-            io.observe(el);
-            return () => io.disconnect();
-        }, []);
-        return (
-            <div
-                ref={ref}
-                className={"reveal" + (visible ? " is-visible" : "")}
-                style={{ transitionDelay: `${delay}ms` }}
-            >
-                {children}
-            </div>
-        );
-    }
 
     return (
         <>
@@ -95,20 +74,11 @@ export default function HomePage() {
 
                     <ul className="work-list">
                         {projects.map((p, i) => (
-                            <Reveal key={p.title} delay={i * 80}>
-                                <li className="work-item">
-                                    <a href="#" className="work-link">
-                                        <span className="work-year">{p.year}</span>
-                                        <div className="work-info">
-                                            <h3>{p.title}</h3>
-                                            <p>{p.description}</p>
-                                        </div>
-                                        <div className="work-tags">
-                                            {p.tags.map((t) => <span key={t} className="tag">{t}</span>)}
-                                        </div>
-                                    </a>
-                                </li>
-                            </Reveal>
+                            <ProjectDetailsPage
+                                key={p.id || p.title}
+                                project={p}
+                                i={i}
+                            />
                         ))}
                     </ul>
                 </div>

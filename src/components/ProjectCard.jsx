@@ -1,6 +1,6 @@
-import Reveal from "../components/Reveal"
+import Reveal from "./Reveal"
 
-export default function ProjectDetailsPage({ project, i }) {
+export default function ProjectCard({ project, i }) {
     return (
         <Reveal delay={i * 80}>
             <li className="work-item">

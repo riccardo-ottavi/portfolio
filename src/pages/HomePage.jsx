@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { projects } from "../data/projectsInfos";
-import ProjectDetailsPage from "./ProjectDetailsPage";
+import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
 
 export default function HomePage() {
@@ -74,11 +75,15 @@ export default function HomePage() {
 
                     <ul className="work-list">
                         {projects.map((p, i) => (
-                            <ProjectDetailsPage
+                            <Link
+                                to={`/projects/${p.id}`}
                                 key={p.id || p.title}
+                            >
+                                <ProjectCard
                                 project={p}
                                 i={i}
                             />
+                            </Link>                          
                         ))}
                     </ul>
                 </div>

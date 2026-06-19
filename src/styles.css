@@ -9,6 +9,53 @@
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
+.project-detail {
+  padding: 10rem 1.5rem 8rem;
+}
+
+.project-title {
+  margin-top: 1rem;
+  max-width: 12ch;
+
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+.project-meta {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-divider {
+  margin: 5rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.project-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: 3fr 9fr;
+  }
+}
+
+.project-description {
+  max-width: 40rem;
+
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {

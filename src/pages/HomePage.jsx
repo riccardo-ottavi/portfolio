@@ -127,8 +127,8 @@ export default function HomePage() {
                         <h2>Hai un progetto<br /><span className="italic muted">in mente?</span></h2>
                     </Reveal>
                     <Reveal delay={250}>
-                        <a href="mailto:hello@studio.it" className="contact-link">
-                            hello@studio.it <span>↗</span>
+                        <a href="mailto:riccardoottavidev@gmail.com" className="contact-link">
+                            riccardoottavidev@gmail.com <span>↗</span>
                         </a>
                     </Reveal>
                 </div>
@@ -139,8 +139,8 @@ export default function HomePage() {
                     <p>© 2025 Studio — Tutti i diritti riservati</p>
                     <div className="footer-links">
                         <a href="#">Instagram</a>
-                        <a href="#">Are.na</a>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://github.com/riccardo-ottavi">GitHub</a>
+                        <a href="https://www.linkedin.com/in/riccardo-ottavi-b542533b8/">LinkedIn</a>
                     </div>
                 </div>
             </footer>

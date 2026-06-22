@@ -15,6 +15,7 @@ export default function ProjectDetails() {
     return (
         <>
             <main className="project-detail">
+
                 <div className="container">
 
                     <p className="eyebrow">
@@ -37,6 +38,16 @@ export default function ProjectDetails() {
 
                     <div className="project-grid">
                         <aside>
+                            <p className="eyebrow">Demo</p>
+                        </aside>
+
+                        <div>
+                            <p>{project.media}</p>
+                        </div>
+                    </div>
+
+                    <div className="project-grid">
+                        <aside>
                             <p className="eyebrow">Descrizione</p>
                         </aside>
 
@@ -44,6 +55,30 @@ export default function ProjectDetails() {
                             <p className="project-description">
                                 {project.description}
                             </p>
+                        </div>
+                    </div>
+
+                    <div className="project-grid">
+                        <aside>
+                            <p className="eyebrow">Dettagli</p>
+                        </aside>
+
+                        <div>
+                            <p className="project-detail">
+                                {project.details}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div className="project-grid">
+                        <aside>
+                            <p className="eyebrow">Link</p>
+                        </aside>
+
+                        <div>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer">
+                                Visita progetto
+                            </a>
                         </div>
                     </div>
 

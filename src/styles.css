@@ -39,7 +39,10 @@
 .project-grid {
   display: grid;
   gap: 3rem;
+  
 }
+
+
 
 @media (min-width: 768px) {
   .project-grid {

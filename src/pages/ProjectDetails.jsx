@@ -41,9 +41,10 @@ export default function ProjectDetails() {
                             <p className="eyebrow">Demo</p>
                         </aside>
 
-                        <div>
-                            <p>{project.media}</p>
-                        </div>
+                        {project.media && (
+                            <video src={`/${project.media}`} controls />
+                        )}
+                    
                     </div>
 
                     <div className="project-grid">

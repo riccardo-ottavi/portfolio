@@ -42,7 +42,10 @@
   
 }
 
-
+video {
+  width: 450px;
+  height: 300px;
+}
 
 @media (min-width: 768px) {
   .project-grid {

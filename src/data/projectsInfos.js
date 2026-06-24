@@ -37,6 +37,6 @@ export const projects = [
             details: "Applicazione che implementa le principali meccaniche del gioco originale, tra cui la gestione della griglia 4x4, lo spostamento delle tessere tramite input da tastiera e la fusione dei numeri uguali secondo le regole del gioco. Il progetto include anche la generazione casuale di nuove tessere dopo ogni mossa e la gestione delle condizioni di vittoria e game over. Durante lo sviluppo ho approfondito la programmazione orientata agli oggetti, la gestione degli eventi in Tkinter e la logica algoritmica necessaria per implementare correttamente le dinamiche di gioco e il controllo dello stato della griglia.",
             tags: ["Python", "Tkinter"],
             link: "https://github.com/riccardo-ottavi/2048",
-            media:"metti video qua"
+            media:"2048.mp4"
         },
     ];

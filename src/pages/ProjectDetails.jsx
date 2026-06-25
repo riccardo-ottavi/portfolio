@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projectsInfos";
+import { Link } from "react-router-dom";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -14,6 +15,7 @@ export default function ProjectDetails() {
 
     return (
         <>
+            <Link to={"/"}><button>Indietro</button></Link>
             <main className="project-detail">
 
                 <div className="container">

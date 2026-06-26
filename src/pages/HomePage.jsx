@@ -90,7 +90,15 @@ export default function HomePage() {
                         </Reveal>
                     </div>
                 </div>
+                <a
+                    href="/RiccardoOttaviCV.pdf"
+                    download
+                    className="cv-download"
+                >
+                    Scarica il CV <span>↗</span>
+                </a>
             </section>
+
 
             <section id="work" className="section">
                 <div className="container">
@@ -108,7 +116,7 @@ export default function HomePage() {
 
                     <ul className="work-list">
                         {instructionInfos.map((inst, i) => (
-                            <InstructionCard 
+                            <InstructionCard
                                 instruction={inst}
                                 i={i}
                             />

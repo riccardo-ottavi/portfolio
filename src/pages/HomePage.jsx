@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { projects } from "../data/projectsInfos";
 import ProjectCard from "../components/ProjectCard";
 import Reveal from "../components/Reveal";
+import { instructionInfos } from "../data/instructionInfos";
+import InstructionCard from "../components/InstructionCard";
 
 export default function HomePage() {
 
@@ -87,6 +89,31 @@ export default function HomePage() {
                             </div>
                         </Reveal>
                     </div>
+                </div>
+            </section>
+
+            <section id="work" className="section">
+                <div className="container">
+                    <Reveal>
+                        <div className="section-head">
+                            <div>
+                                <p className="eyebrow">⟶ Istruzione</p>
+                                <h2>Titoli di studio acquisiti</h2>
+                            </div>
+                            <p className="font-mono muted" style={{ fontSize: "0.75rem" }}>
+                                {String(instructionInfos.length).padStart(2, "0")} / {String(instructionInfos.length).padStart(2, "0")}
+                            </p>
+                        </div>
+                    </Reveal>
+
+                    <ul className="work-list">
+                        {instructionInfos.map((inst, i) => (
+                            <InstructionCard 
+                                instruction={inst}
+                                i={i}
+                            />
+                        ))}
+                    </ul>
                 </div>
             </section>
 

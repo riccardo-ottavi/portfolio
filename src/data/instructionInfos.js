@@ -1,4 +1,4 @@
-const instructionInfos = [
+export const instructionInfos = [
     {
         id: 1,
         name: "Liceo Classico",

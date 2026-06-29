@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../data/projectsInfos";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -13,9 +14,15 @@ export default function ProjectDetails() {
         return <h1>Progetto non trovato</h1>;
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
-            <Link to={"/"}><button>Indietro</button></Link>
+            <Link to="/" className="back-link">
+                <span>← Indietro</span>
+            </Link>
             <main className="project-detail">
 
                 <div className="container">
@@ -46,7 +53,7 @@ export default function ProjectDetails() {
                         {project.media && (
                             <video src={`/${project.media}`} controls />
                         )}
-                    
+
                     </div>
 
                     <div className="project-grid">

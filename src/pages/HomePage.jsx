@@ -77,9 +77,9 @@ export default function HomePage() {
                         <Reveal delay={250}>
                             <div className="stats">
                                 {[
-                                    { k: "12+", v: "Anni di pratica" },
-                                    { k: "60", v: "Progetti consegnati" },
-                                    { k: "4", v: "Awwwards menzionati" },
+                                    { k: "3+", v: "Anni di studio" },
+                                    { k: "8+", v: "Progetti realizzati" },
+                                    { k: "3", v: "Linguaggi conosciuti" },
                                 ].map((s) => (
                                     <div key={s.v}>
                                         <div className="stat-num">{s.k}</div>
@@ -87,26 +87,26 @@ export default function HomePage() {
                                     </div>
                                 ))}
                             </div>
+                            <a
+                                href="/RiccardoOttaviCV.pdf"
+                                download
+                                className="cv-download"
+                            >
+                                Scarica il CV <span>↗</span>
+                            </a>
                         </Reveal>
                     </div>
                 </div>
-                <a
-                    href="/RiccardoOttaviCV.pdf"
-                    download
-                    className="cv-download"
-                >
-                    Scarica il CV <span>↗</span>
-                </a>
             </section>
 
 
-            <section id="work" className="section">
+            <section id="instruction" className="section">
                 <div className="container">
                     <Reveal>
                         <div className="section-head">
                             <div>
                                 <p className="eyebrow">⟶ Istruzione</p>
-                                <h2>Titoli di studio acquisiti</h2>
+                                <h2>Titoli di studio</h2>
                             </div>
                             <p className="font-mono muted" style={{ fontSize: "0.75rem" }}>
                                 {String(instructionInfos.length).padStart(2, "0")} / {String(instructionInfos.length).padStart(2, "0")}
@@ -172,9 +172,7 @@ export default function HomePage() {
 
             <footer className="footer">
                 <div className="footer-inner">
-                    <p>© 2025 Studio — Tutti i diritti riservati</p>
                     <div className="footer-links">
-                        <a href="#">Instagram</a>
                         <a href="https://github.com/riccardo-ottavi">GitHub</a>
                         <a href="https://www.linkedin.com/in/riccardo-ottavi-b542533b8/">LinkedIn</a>
                     </div>

@@ -60,6 +60,42 @@
     border-color .3s;
 }
 
+.back-link {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+
+  color: var(--muted);
+
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+
+  transition: color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.back-link span {
+  transition: transform 0.3s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateX(-2px);
+}
+
+.back-link:hover span {
+  transform: translateX(-4px);
+}
+
 .cv-download span {
   transition: transform .3s;
 }

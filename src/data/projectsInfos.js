@@ -9,8 +9,18 @@ export const projects = [
             link: "https://lolboard.vercel.app",
             media:"lol-demo.mp4"
         },
-        {
+        {   
             id: 2,
+            year: "2026",
+            title: "Spotify Clone",
+            description: "Clone della Web App di Spotify contenente la musica da me prodotta.",
+            details: "Realizzazione di un clone di Spotify sviluppato con React e TypeScript, con interfaccia ispirata alla piattaforma originale. Il progetto mi ha permesso di approfondire la gestione dei componenti, lo state management, il routing e la creazione di interfacce moderne e dinamiche, consolidando le mie competenze nel frontend development.",
+            tags: ["Typescript", "React", "Node.js"],
+            link: "https://spotify-clone-project-rho.vercel.app",
+            media:"spoti.mp4"
+        },
+        {
+            id: 3,
             year: "2025",
             title: "Birthday rememberer",
             description: "Web App per inserire e tenere traccia dei compleanni di una lista di contatti, non dimenticarti più di fare gli auguri!",
@@ -19,16 +29,6 @@ export const projects = [
             link: "https://birthday-rememberer.vercel.app",
             media:"birth.mp4"
             
-        },
-        {   
-            id: 3,
-            year: "2026",
-            title: "Spotify Clone",
-            description: "Clone della Web App di Spotify contenente la musica da me prodotta.",
-            details: "Realizzazione di un clone di Spotify sviluppato con React e TypeScript, con interfaccia ispirata alla piattaforma originale. Il progetto mi ha permesso di approfondire la gestione dei componenti, lo state management, il routing e la creazione di interfacce moderne e dinamiche, consolidando le mie competenze nel frontend development.",
-            tags: ["Typescript", "React", "Node.js"],
-            link: "https://spotify-clone-project-rho.vercel.app",
-            media:"spoti.mp4"
         },
         {
             id: 4,

@@ -51,7 +51,7 @@ export default function ProjectDetails() {
                         </aside>
 
                         {project.media && (
-                            <video src={`/${project.media}`} controls />
+                            <video src={project.media} controls />
                         )}
 
                     </div>

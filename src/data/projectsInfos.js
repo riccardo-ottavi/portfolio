@@ -15,7 +15,7 @@ export const projects = [
             title: "Spotify Clone",
             description: "Clone della Web App di Spotify contenente la musica da me prodotta.",
             details: "Realizzazione di un clone di Spotify sviluppato con React e TypeScript, con interfaccia ispirata alla piattaforma originale. Il progetto mi ha permesso di approfondire la gestione dei componenti, lo state management, il routing e la creazione di interfacce moderne e dinamiche, consolidando le mie competenze nel frontend development.",
-            tags: ["Typescript", "React", "Node.js", "Express", "Claudinary", "MySQL", "Vercel", "Render"],
+            tags: ["Typescript", "React", "Node.js", "Express", "Cloudinary", "MySQL", "Vercel", "Render"],
             link: "https://spotify-clone-project-rho.vercel.app",
             media:"spoti.mp4"
         },
